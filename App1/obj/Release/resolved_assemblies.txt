@@ -1,0 +1,10 @@
+C:\Users\noolt4\documents\visual studio 2015\Projects\App1\App1\obj\Release\android\assets\RymdSkepp.dll
+C:\Users\noolt4\documents\visual studio 2015\Projects\App1\App1\obj\Release\android\assets\Java.Interop.dll
+C:\Users\noolt4\documents\visual studio 2015\Projects\App1\App1\obj\Release\android\assets\Mono.Android.dll
+C:\Users\noolt4\documents\visual studio 2015\Projects\App1\App1\obj\Release\android\assets\mscorlib.dll
+C:\Users\noolt4\documents\visual studio 2015\Projects\App1\App1\obj\Release\android\assets\OpenTK.dll
+C:\Users\noolt4\documents\visual studio 2015\Projects\App1\App1\obj\Release\android\assets\System.Core.dll
+C:\Users\noolt4\documents\visual studio 2015\Projects\App1\App1\obj\Release\android\assets\System.dll
+C:\Users\noolt4\documents\visual studio 2015\Projects\App1\App1\obj\Release\android\assets\System.Xml.dll
+C:\Users\noolt4\documents\visual studio 2015\Projects\App1\App1\obj\Release\android\assets\System.Runtime.Serialization.dll
+C:\Users\noolt4\documents\visual studio 2015\Projects\App1\App1\obj\Release\android\assets\System.ServiceModel.Internals.dll

@@ -1,0 +1,165 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>RymdSkepp</name>
+    </assembly>
+    <members>
+        <member name="F:App1.Bounds.size">
+            <summary>
+            The size of the playing area
+            </summary>
+        </member>
+        <member name="M:App1.Bounds.#ctor">
+            <summary>
+            Create a visible border around the playing area
+            </summary>
+        </member>
+        <member name="M:App1.Button.OnClick">
+            <summary>
+            This method runs when the button is tapped
+            </summary>
+        </member>
+        <member name="F:App1.Enemy.speed">
+            <summary>
+            The speed of the enemy
+            </summary>
+        </member>
+        <member name="F:App1.GameObject.DrawMode">
+            <summary>
+            How the object should be drawn
+            </summary>
+        </member>
+        <member name="F:App1.GameObject.UIElement">
+            <summary>
+            Is the object a UIElement?
+            </summary>
+        </member>
+        <member name="F:App1.GameObject.vertices">
+            <summary>
+            The vertices of the object
+            </summary>
+        </member>
+        <member name="F:App1.GameObject.colors">
+            <summary>
+            The color of each vertex
+            </summary>
+        </member>
+        <member name="M:App1.GameObject.Tick">
+            <summary>
+            Runs each time the game renders
+            </summary>
+        </member>
+        <member name="M:App1.GameObject.CheckCollision(App1.GameObject,System.Double)">
+            <summary>
+            Check the distance from this GameObject to another to see it they collide.
+            </summary>
+            <param name="other">The other GameObject</param>
+            <param name="radius">The maximum distance that counts as a collision</param>
+            <returns>Wether or not the objects are colliding</returns>
+        </member>
+        <member name="M:App1.GameObject.Lerp(System.Single,System.Single,System.Single)">
+            <summary>
+            Linear interpolation function
+            </summary>
+            <param name="a">first number</param>
+            <param name="b">second number</param>
+            <param name="w">interpolation</param>
+        </member>
+        <member name="F:App1.Joystick.initialPosition">
+            <summary>
+            The position of the joystick as viewport coordinates
+            </summary>
+        </member>
+        <member name="M:App1.Joystick.GetJoystickInput">
+            <summary>
+            Updates the joystick
+            </summary>
+            <returns>
+            Input as a 3-dimensional vector where
+            x = x-axis input
+            y = y-axis input
+            z = joystick angle
+            </returns>
+        </member>
+        <member name="M:App1.Joystick.SetPosition(App1.Vector)">
+            <summary>
+            Set a new position of the joystick on the viewport
+            </summary>
+            <param name="pos">New position on the viewport</param>
+        </member>
+        <member name="M:App1.MainActivity.TouchInput(System.Object,Android.Views.View.TouchEventArgs)">
+            <summary>
+            Udate the TouchPoint variable to the screen coordinates of the current touch event.
+            </summary>
+            <param name="sender"></param>
+            <param name="touchEventArgs"></param>
+        </member>
+        <member name="M:App1.MainActivity.SaveHighscore(System.Int32)">
+            <summary>
+            Write a new highscore to the save file
+            </summary>
+            <param name="highscore">The new highscore to be saved</param>
+        </member>
+        <member name="M:App1.MainActivity.LoadHighscore">
+            <summary>
+            Read the highscore from the save file.
+            </summary>
+            <returns>The file content parsed to an integer</returns>
+        </member>
+        <member name="M:App1.GLView1.StartGame">
+            <summary>
+            Start the actual game when the player taps the play button
+            </summary>
+        </member>
+        <member name="M:App1.GLView1.Reset">
+            <summary>
+            Reset the game when the player dies
+            </summary>
+        </member>
+        <member name="M:App1.GLView1.GetSpaceShip">
+            <returns>The spaceship</returns>
+        </member>
+        <member name="M:App1.GLView1.Spawn(App1.GameObject)">
+            <summary>
+            Add a game object to the spawn queue.
+            Objects in the spawn queue will spawn when the frame has finished rendering
+            </summary>
+            <param name="gameObject">The GameObject to be added</param>
+        </member>
+        <member name="M:App1.GLView1.Remove(App1.GameObject)">
+            <summary>
+            Add a GameObject to the remove queue.
+            Objects in the remove queue will be removed from the game scene when the frame has finnished rendering
+            </summary>
+            <param name="gameObject">The GameObject to be removed</param>
+        </member>
+        <member name="M:App1.GLView1.IncrementScore">
+            <summary>
+            Add 1 to the score and update the scoreText.
+            </summary>
+        </member>
+        <member name="M:App1.ParticleSystem.#ctor(App1.Vector,System.Int32,System.Single,System.Single,System.Int32,System.Func{System.Int32})">
+            <summary>
+            Create a particle system
+            </summary>
+            <param name="position">The position of the particle system</param>
+            <param name="particles">The number of particles to be emitted from this particle system</param>
+            <param name="speed">The velocity of the particles</param>
+            <param name="duration">The lifetime of the particles</param>
+            <param name="size">The point size of the particles</param>
+            <param name="OnDone">Function to be executed when the particle system is done</param>
+        </member>
+        <member name="M:App1.UIText.#ctor(App1.Vector)">
+            <summary>
+            Create a new UIText
+            </summary>
+            <param name="position">The position of the top left corner of the text</param>
+        </member>
+        <member name="M:App1.UIText.SetText(System.String)">
+            <summary>
+            Set th text to be drawn
+            </summary>
+            <param name="text">The text to be drawn</param>
+        </member>
+    </members>
+</doc>
